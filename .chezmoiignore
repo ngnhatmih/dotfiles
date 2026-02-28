@@ -1,0 +1,4 @@
+**/dot_git
+dot_config/nvim/lazy-lock.json
+obsidian/dot_obsidian/plugins/**
+obsidian/dot_obsidian/workspace*.json

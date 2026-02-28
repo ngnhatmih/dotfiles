@@ -1,0 +1,13 @@
+{
+  "promptDelete": false,
+  "mobileToolbarCommands": [
+    "editor:undo",
+    "editor:redo",
+    "editor:set-heading",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:indent-list",
+    "editor:unindent-list",
+    "command-palette:open"
+  ]
+}
