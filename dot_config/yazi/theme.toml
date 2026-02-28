@@ -1,0 +1,7 @@
+[flavor]
+dark = "ashen"
+
+[icon]
+prepend_conds = [
+  { if = "dir", text = "", fg = "#C53030"},
+]
