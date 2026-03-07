@@ -5,7 +5,7 @@ local M = {}
 function M.apply_to_config(config)
 	config.disable_default_mouse_bindings = true
 	config.keys = {
-		-- split tab/pane
+		-- Split tab/pane
 		{
 			key = "%",
 			mods = "CTRL|SHIFT|ALT",
@@ -32,6 +32,12 @@ function M.apply_to_config(config)
 			key = "Enter",
 			mods = "ALT",
 			action = wezterm.action.ToggleFullScreen,
+		},
+		-- Reload config
+		{
+			key = "r",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ReloadConfiguration,
 		},
 	}
 end

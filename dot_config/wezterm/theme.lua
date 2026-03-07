@@ -13,7 +13,9 @@ function M.apply_to_config(config)
 		bottom = 5,
 	}
 
-	config.font = wezterm.font("Hack Nerd Font Mono")
+	config.custom_block_glyphs = false
+
+	config.font = wezterm.font_with_fallback({ "Hack Nerd Font Mono", "Cascadia Code" })
 	config.font_size = 10
 	config.colors = {
 		foreground = "#f5f5f5",
@@ -46,10 +48,10 @@ function M.apply_to_config(config)
 			"#d5d5d5",
 		},
 	}
-
+	local bg = wezterm.home_dir .. "/rs/bg.jpg"
 	config.background = {
 		{
-			source = { File = wezterm.config_dir .. "/rs/bg.jpg" },
+			source = { File = bg },
 			hsb = { brightness = 0.1 },
 			width = "100%",
 		},

@@ -5,6 +5,12 @@ require("tabline").apply_to_config(config)
 require("keybinds").apply_to_config(config)
 require("theme").apply_to_config(config)
 
-config.default_prog = { "pwsh.exe", "-NoLogo" }
+local target = wezterm.target_triple
+
+if target:find("windows") then
+	config.default_prog = { "wsl.exe", "-d", "Ubuntu", "--cd", "~" }
+end
+
+config.default_cwd = wezterm.home_dir
 
 return config

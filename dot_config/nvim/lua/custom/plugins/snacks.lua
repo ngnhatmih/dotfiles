@@ -5,7 +5,20 @@ return {
 	---@type snacks.Config
 	opts = {
 		bigfile = { enabled = true },
-		dashboard = { enabled = true },
+		dashboard = {
+			preset = {
+				header = [[
+ _____  ___    _______   _____  ___   
+(\"   \|"  \  /" _   "| (\"   \|"  \  
+|.\\   \    |(: ( \___) |.\\   \    | 
+|: \.   \\  | \/ \      |: \.   \\  | 
+|.  \    \. | //  \ ___ |.  \    \. | 
+|    \    \ |(:   _(  _||    \    \ | 
+ \___|\____\) \_______)  \___|\____\) 
+                                      
+		]],
+			},
+		},
 		explorer = { hidden = true },
 		indent = { enabled = true },
 		input = { enabled = true },
