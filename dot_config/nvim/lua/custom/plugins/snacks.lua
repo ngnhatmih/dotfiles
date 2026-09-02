@@ -530,16 +530,31 @@ return {
 		{
 			"<c-/>",
 			function()
-				Snacks.terminal()
+				Snacks.terminal.toggle("bash", {
+					win = {
+						position = "float",
+						border = "rounded",
+						width = 0.8,
+						height = 0.8,
+					},
+				})
 			end,
+			mode = { "n", "t" },
 			desc = "Toggle Terminal",
 		},
 		{
 			"<c-_>",
 			function()
-				Snacks.terminal()
+				Snacks.terminal("bash", {
+					win = {
+						position = "float",
+						border = "rounded",
+						width = 0.8,
+						height = 0.8,
+					},
+				})
 			end,
-			desc = "which_key_ignore",
+			desc = "Toggle Terminal",
 		},
 		{
 			"]]",

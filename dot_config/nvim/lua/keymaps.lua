@@ -46,5 +46,4 @@ vim.keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 
 -- Lazy
 vim.keymap.set("n", "<leader>l", ":Lazy<Return>", { desc = "Open Lazy UI" })
-
 -- vim: ts=13 sts=2 sw=2 et
