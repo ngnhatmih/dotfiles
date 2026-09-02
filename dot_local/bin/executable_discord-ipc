@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -f /tmp/discord-ipc-0
+
+socat \
+  UNIX-LISTEN:/tmp/discord-ipc-0,fork,unlink-early \
+  EXEC:"/mnt/c/npiperelay/npiperelay.exe -ep -s //./pipe/discord-ipc-0",nofork &

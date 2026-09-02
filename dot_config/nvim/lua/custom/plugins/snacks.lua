@@ -26,7 +26,15 @@ return {
 			enabled = true,
 			timeout = 3000,
 		},
-		picker = { enabled = true },
+		picker = {
+			sources = {
+				explorer = {
+					hidden = true,
+					ignored = true,
+				},
+			},
+			enabled = true,
+		},
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = true },

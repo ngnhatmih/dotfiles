@@ -20,8 +20,8 @@ function M.apply_to_config(config)
 	config.colors = {
 		foreground = "#f5f5f5",
 		background = "#121212",
-		cursor_bg = "#f5f5f5",
-		cursor_fg = "#121212",
+		cursor_bg = "#ff4000",
+		cursor_fg = "#ffffff",
 		cursor_border = "#f5f5f5",
 		selection_fg = "#f5f5f5",
 		selection_bg = "#1d1d1d",

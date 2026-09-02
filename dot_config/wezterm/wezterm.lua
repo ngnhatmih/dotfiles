@@ -7,10 +7,7 @@ require("theme").apply_to_config(config)
 
 local target = wezterm.target_triple
 
-if target:find("windows") then
-	config.default_prog = { "wsl.exe", "-d", "Ubuntu", "--cd", "~" }
-end
-
+config.default_domain = "WSL:Ubuntu"
 config.default_cwd = wezterm.home_dir
 
 return config
