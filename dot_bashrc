@@ -141,3 +141,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=/home/ngnhatmih/.opencode/bin:$PATH
 
 ~/.local/bin/discord-ipc
+eval "$(zoxide init bash)"

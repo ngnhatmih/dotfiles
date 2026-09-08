@@ -15,12 +15,12 @@ function M.apply_to_config(config)
 
 	config.custom_block_glyphs = false
 
-	config.font = wezterm.font_with_fallback({ "Hack Nerd Font Mono", "Cascadia Code" })
-	config.font_size = 10
+	config.font = wezterm.font("JetBrainsMono Nerd Font")
+	config.font_size = 14.0
 	config.colors = {
 		foreground = "#f5f5f5",
 		background = "#121212",
-		cursor_bg = "#ff4000",
+		cursor_bg = "#ff00f7",
 		cursor_fg = "#ffffff",
 		cursor_border = "#f5f5f5",
 		selection_fg = "#f5f5f5",
